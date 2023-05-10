@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+header {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 900;
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+header:hover h1 {
+    color: #f39c12;
+}
+
+
+.calculator {
+    max-width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    margin-bottom: 10px;
+}
+
+.display input {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.button:hover {
+    background-color: #d2d2d2;
+    cursor: pointer;
+}
+
+.buttons button {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    .calculator {
+        max-width: 400px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .calculator {
+        max-width: 250px;
+    }
+
+    .display input {
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .buttons button {
+        font-size: 18px;
+        height: 40px;
+    }
+
+}

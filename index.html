@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imagenes/icono.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Calculadora</h1>
+        </div>
+    </header>
+    <main>
+        <div class="background">
+            <div class="calculator">
+                <div class="display">
+                    <input type="text" id="result" disabled>
+                </div>
+                <div class="buttons">
+                    <button onclick="clearResult()" class="button">C</button>
+                    <button onclick="deleteNumber()" class="button">CE</button>
+                    <button onclick="inputValue('%')" class="button">%</button>
+                    <button onclick="inputValue('/')" class="button">&divide;</button>
+                    <button onclick="inputValue('7')" class="button">7</button>
+                    <button onclick="inputValue('8')" class="button">8</button>
+                    <button onclick="inputValue('9')" class="button">9</button>
+                    <button onclick="inputValue('*')" class="button">&times;</button>
+                    <button onclick="inputValue('4')" class="button">4</button>
+                    <button onclick="inputValue('5')" class="button">5</button>
+                    <button onclick="inputValue('6')" class="button">6</button>
+                    <button onclick="inputValue('-')" class="button">&minus;</button>
+                    <button onclick="inputValue('1')" class="button">1</button>
+                    <button onclick="inputValue('2')" class="button">2</button>
+                    <button onclick="inputValue('3')" class="button">3</button>
+                    <button onclick="inputValue('+')" class="button">+</button>
+                    <button onclick="inputValue('0')" class="button">0</button>
+                    <button onclick="inputValue('.')" class="button">.</button>
+                    <button onclick="calculateResult()" class="button equal">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Esta calculadora fue desarrollada utilizando HTML, CSS y JavaScript.</p>
+        <p>Creado por <span>Francisco Rarug</span></p>
+    </footer>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
